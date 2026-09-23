@@ -13,14 +13,15 @@
     "check:fix": "biome check --write"
   },
   "dependencies": {
-    "astro": "^7.3.4"
+    "@astrojs/starlight": "^0.42.3",
+    "astro": "^7.3.4",
+    "remark-custom-header-id": "^1.0.0"
   },
   "allowScripts": {
     "esbuild": true
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.14",
-    "@openjck/biome-config": "^2.0.0",
-    "@picocss/pico": "^2.1.1"
+    "@openjck/biome-config": "^2.0.0"
   }
 }

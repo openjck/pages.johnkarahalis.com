@@ -1,0 +1,29 @@
+---
+/**
+ * A SiteTitle component that is not a link and that does not support logos.
+ *
+ * This is a simplified version of the SiteTitle component that ships with
+ * Astro.
+ *
+ * https://github.com/withastro/starlight/blob/f5f776859844c671fd797651294520217bf871d5/packages/starlight/src/components/SiteTitle.astro
+ */
+
+const { siteTitle } = Astro.locals.starlightRoute;
+---
+
+<span class="site-title">{siteTitle}</span>
+
+<style>
+@layer starlight.core {
+  .site-title {
+    align-items: center;
+    gap: var(--sl-nav-gap);
+    font-size: var(--sl-text-h4);
+    font-weight: 600;
+    color: var(--sl-color-text-accent);
+    text-decoration: none;
+    white-space: nowrap;
+    min-width: 0;
+  }
+}
+</style>
