@@ -1,0 +1,13 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.5.14/schema.json",
+  "extends": ["@openjck/biome-config"],
+
+  // Format .astro files.
+  // https://biomejs.dev/internals/language-support/#html-super-languages-support
+  "html": {
+    "experimentalFullSupportEnabled": true,
+    "formatter": {
+      "enabled": true,
+    },
+  },
+}
