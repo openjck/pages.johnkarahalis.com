@@ -20,6 +20,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.14",
-    "@openjck/biome-config": "^2.0.0"
+    "@openjck/biome-config": "^2.0.0",
+    "@picocss/pico": "^2.1.1"
   }
 }
