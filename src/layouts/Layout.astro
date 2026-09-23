@@ -1,5 +1,7 @@
 ---
 import "@picocss/pico/css/pico.classless.min.css";
+
+const { frontmatter } = Astro.props;
 ---
 
 <!doctype html>
@@ -8,7 +10,7 @@ import "@picocss/pico/css/pico.classless.min.css";
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="generator" content={Astro.generator}>
-    <title>Pages</title>
+    <title>{frontmatter.title}</title>
   </head>
   <body>
     <main>
