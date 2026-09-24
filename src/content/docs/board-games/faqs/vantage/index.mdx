@@ -1,12 +1,20 @@
 ---
-title: Vantage FAQs
+title: Vantage Board Game FAQs
 ---
 import Spoiler from "/src/components/Spoiler.astro";
 
 TODO:
 
 * Review text, fragments, and headers (make them simpler) from...
-  * Some cards in the player grid show
+  * Already done
+    * Overview
+    * General guidance
+    * Actions
+    * Movement
+    * Player interaction
+    * Text clarifications
+  * Remaining to be done
+    * Cards from "Some cards in the player grid show" on down
 
 I run the wonderful board game
 [Vantage](https://boardgamegeek.com/boardgame/420033/vantage) for my game group.
@@ -90,7 +98,7 @@ perform the _same_ location action again, if it makes sense thematically?
 No. The [relevant rules](https://vantage.rulepop.com/#continue) state that
 (emphasis mine):
 
-> If a location action’s result includes instructions to “continue”, you must
+> If a location action’s result includes instructions to "continue", you must
 > perform an additional action, ignoring the restriction in step 1 (e.g., **if
 > you already performed the engage location action, you may choose another
 > location action, but not the same engage action**).
@@ -128,7 +136,7 @@ The [relevant rules](https://vantage.rulepop.com/#cost) state that:
 
 The [Boost rules](https://vantage.rulepop.com/#boost) also state that:
 
-> When an icon is used instead of the word “boost,” the number of icons
+> When an icon is used instead of the word "boost," the number of icons
 > represent the amount of boost. [One boost icon] is 1 boost, [two boost icons]
 > is 2 boost.
 
@@ -250,20 +258,21 @@ mine):
 
 ## Movement \{#movement\}
 
-### When do you resolve a one-cost move action to move? When do you pay some other cost to move? \{#moving-costs\}
+### How much does it cost to perform a move action to a compass location? \{#compass-moving-costs\}
 
 On the compass of a location card, if the direction you want to move has
-a number on it, you must resolve a one-cost move action. If the direction you
-want to move has a star on it, you must look up the cost of the move in the
-depart storybook.
+a number on it, you must resolve a one-cost _Move_ action. That is, you must
+roll one challenge die or spend one _Move_ skill token. If the direction you
+want to move has a star on it, you must look up the cost of the _Move_ action in
+the _Depart_ storybook.
 
 Remember it like this: if there's a number on that direction, nothing else is
 going to tell you how much the move costs. For that reason, you can be sure it's
-the type of move that costs one move action. If there's a star on the card, it
-_depends_. Think of it like an asterisk (*), which is used in writing to modify
-a sentence with some caveat. The cost of that move _depends_.
+a one-cost _Move_ action. If there's a star on the card, it _depends_. Think of
+it like an asterisk (*), which is used in writing to modify a word or sentence
+with some caveat. The cost of that move _depends_.
 
-### Why do some location cards suggest moving in some direction, even though it's hard to find what the card is talking about by following that direction? \{#unclear-direction-guidance\}
+### Why is there nothing in the direction mentioned by some story text? \{#story-text-direction\}
 
 Stonemaier Games has addressed this in [their
 FAQ](https://stonemaiergames.com/games/vantage/rules-faq/):
@@ -271,14 +280,14 @@ FAQ](https://stonemaiergames.com/games/vantage/rules-faq/):
 > You can gain a variety of quests (a type of goal) while exploring the Vantage
 > planet, and you will often receive loose instructions to head in a specific
 > direction. Please treat these directions similar to how you might in the real
-> world–if someone says to head north, they mean “the area to the north”, not an
+> world–if someone says to head north, they mean "the area to the north", not an
 > unwavering path straight to the north. This is at least partially excuse to
 > explore a new area, with completing the quest just one of many things you can
 > do in that area–given the size of the world, I would recommend not fixating
 > too much on any particular quest (though I understand it can be frustrating to
 > look for something and not find it).
 
-### How do you exit a cave? \{#exit-cave\}
+### How does a player exit a cave? \{#exit-cave\}
 
 Go backward/south, which is the bottom direction of the compass. Stonemaier
 Games has addressed this in [their
@@ -289,7 +298,9 @@ FAQ](https://stonemaiergames.com/games/vantage/rules-faq/):
 > start with a cavern barrier and then move deeper to the next location;
 > sometimes you can find loopholes to skip the barrier.
 
-### Sometimes, the _Depart_ storybook mentions intercardinal directions (NE, SE, SW, NW). How does one move in those directions? \{#intercardinal-directions\}
+### How can a player move in an intercardinal direction? \{#moving-in-intercardinal-directions\}
+
+The four intercardinal directions are NE, SE, SW, and NW.
 
 A player can move in an intercardinal direction if they choose a depart action
 for a given direction (e.g., west) and the _Depart_ storybook lists a direction
@@ -301,7 +312,7 @@ The [relevant rules](https://vantage.rulepop.com/#cost) state that:
 > southeast), you may choose to move in that related direction instead of your
 > original choice.
 
-To ensure that these options are not forgotten, try to make a habit of reminding
+To ensure these options are not forgotten, try to make a habit of reminding
 _Depart_ storybook readers about this rule. For example, you might say, "I'll go
 north, which is a depart action, but if northwest or northeast is an option,
 I might want to do one of those instead."
@@ -321,24 +332,24 @@ each other.
 
 ## Text clarifications \{#text-clarifications\}
 
-### When something tells you to put dice in the center, does it mean the challenge dice pool or the penalty section? \{#center-meaning\}
+### When told to put dice in the center, where should players put them? \{#put-dice-in-center\}
 
-It's referring to the _penalty_ section of the center board. Stonemaier Games
-has addressed this in [their
+In these situations, the term "center" is referring to the _penalty_ section of
+the center board. Stonemaier Games has addressed this in [their
 FAQ](https://stonemaiergames.com/games/vantage/rules-faq/):
 
-> If a challenge dice ability says “place them in the center”, it’s referring to
-> the penalty section of the center (otherwise it would say to “refresh” the
+> If a challenge dice ability says "place them in the center", it’s referring to
+> the penalty section of the center (otherwise it would say to "refresh" the
 > dice, which returns them to the challenge dice pool).
 
-### What are tokens? \{#tokens\}
+### What are tokens? \{#token-meaning\}
 
-Some cards and other text refer to tokens. Tokens are just boost cubes taken
-from the supply.
+Some text refers to _tokens_. Tokens are just boost cubes taken from the boost
+cube supply.
 
 The relevant [rules state](https://vantage.rulepop.com/#boost) that:
 
-> Some cards request that players place ubiquitous “tokens” to track progress;
+> Some cards request that players place ubiquitous "tokens" to track progress;
 > boost tokens are used for this purpose.
 
 [Other rules](https://vantage.rulepop.com/#tokens) state that:
@@ -351,12 +362,12 @@ It's not stated very clearly, in my opinion, but they are meant to be taken from
 the **supply** as markers. Jamey clarified that [on
 BoardGameGeek](https://boardgamegeek.com/thread/3541856/article/46345558#46345558).
 
-### When a card refers to your "first time here," is it referring to your first time _this game_ or your first time ever, including previous games? \{#first-time-here\}
+### Is the "first time here" the first time this game or the first time ever? \{#first-time-here\}
 
-It's referring to the first time this game. Every game of Vantage is
-a standalone experience, with nothing but knowledge carried over from one game
-to the next. This is in keeping with that fact. This was discussed and clarified
-[on
+When text refers to a player's "first time here", it's referring to the first
+time _this game_. Every game of Vantage is a standalone experience, with nothing
+but knowledge carried over from one game to the next. This is in keeping with
+that fact. This was discussed and clarified [on
 BoardGameGeek](https://boardgamegeek.com/thread/3629616/what-is-blood-vision).
 
 ### What counts as a [spoiler]? \{#define-area-1\}
@@ -367,13 +378,14 @@ state that (emphasis mine):
 
 > <Spoiler>City locations are **vertical** cards labeled with the name of the
 > city (or town, village, etc—they're all cities. The various horizontal
-> locations in the capital are not city locations).</Spoiler>
+> locations in <Spoiler>the capital</Spoiler> are not city locations).</Spoiler>
 
 If you're not sure, there's a pretty simple test: <Spoiler>is the location card
 vertical, and does it look something like a city, maybe (but not always) with
-<Spoiler>shops <Spoiler>and</Spoiler> sentients</Spoiler> walking around? If so, it's a city. Is it
-horizontal, or is it vertical but obviously not a city (e.g., it's <Spoiler>the
-inside of a sentient's house</Spoiler>)? Then it's not a city.</Spoiler>
+<Spoiler>shops</Spoiler> and with <Spoiler>sentients walking around</Spoiler>?
+If so, it's a city. Is it horizontal, or is it vertical but obviously not a city
+(e.g., it's <Spoiler>the inside of a sentient's house</Spoiler>)? Then it's not
+a city.</Spoiler>
 
 ### When is a [spoiler] an obstacle? \{#define-obstacle-1\}
 
@@ -382,16 +394,16 @@ When is a <Spoiler>sentient</Spoiler> an obstacle? Use your best judgement. The
 a spoiler, state that:
 
 > <Spoiler>The description of some actions include variations on the conditional
-> statement “if the ____ is no longer an obstacle, reduce this cost to 1”,
+> statement "if the ____ is no longer an obstacle, reduce this cost to 1",
 > typically in regards to moving north past a creature in your way. Apply this
 > at your discretion using the Universal Rule of Thematic Fun. For example, if
 > you talked to a sentient at a location, you may not sneak past them using
-> a “SNEAK past the sentient” action since they already know you’re
+> a "SNEAK past the sentient" action since they already know you’re
 > there.</Spoiler>
 
 In a game our group played, <Spoiler>I spoke to a sentient, and they were
 friendly with me. After that, I took an action which costs 6 if they are an
 obstacle or 1 if they are not an obstacle. Our group decided that they were
 _not_ an obstacle because we spoke and they were friendly. After reading the
-above, I think that was the right choice, especially in light of The Universal
+above, I think that was the right choice, especially in light of the Universal
 Rule of Thematic Fun.</Spoiler>
