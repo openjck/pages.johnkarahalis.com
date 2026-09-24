@@ -9,7 +9,20 @@
       // This is very important for supporting nested spoilers.
       e.stopPropagation();
 
-      const hidden = spoiler.classList.toggle("hidden");
+      // If the spoiler that was clicked is a nested spoiler (a spoiler within
+      // another spoiler), apply the effect to the outermost spoiler first.
+      //
+      // If this were not done, the inner spoiler would toggle (e.g., hidden to
+      // visible) but nothing might visibly change (e.g., if the outer spoiler
+      // is still hidden).
+      let target = spoiler;
+      for (let el = spoiler.parentElement?.closest(".spoiler"); el; el = el.parentElement?.closest(".spoiler")) {
+        if (el.classList.contains("hidden")) {
+          target = el;
+        }
+      }
+
+      const hidden = target.classList.toggle("hidden");
       spoiler.title = hidden ? "Show spoiler" : "Hide spoiler";
     });
   });
