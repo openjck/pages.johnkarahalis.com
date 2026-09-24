@@ -34,14 +34,15 @@ function getSidebarEntries(): SidebarLink[] {
 export default defineConfig({
   integrations: [
     starlight({
-      title: "Board Game FAQs by John Karahalis",
-      pagefind: false,
       components: {
         // Do not use a link for the site title, since there's nothing
         // meaningful to link to.
         SiteTitle: "./src/components/TextOnlySiteTitle.astro",
       },
+      favicon: "/public/favicon.ico",
+      pagefind: false,
       sidebar: getSidebarEntries(),
+      title: "Board Game FAQs by John Karahalis",
     }),
   ],
   markdown: {
