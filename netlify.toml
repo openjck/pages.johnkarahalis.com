@@ -14,3 +14,10 @@
     X-Content-Type-Options = 'nosniff'
     X-Frame-Options = 'DENY'
     X-XSS-Protection = '1; mode=block'
+
+[[redirects]]
+
+  from = 'https://flourishing-figolla-6dfdc8.netlify.app/*'
+  to = 'https://pages.johnkarahalis.com/:splat'
+  status = 301
+  force = true
