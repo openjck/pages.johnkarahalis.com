@@ -1,0 +1,33 @@
+<span class="spoiler hidden" title="Show spoiler">
+  <slot />
+</span>
+
+<script>
+  const spoilers = document.querySelectorAll(".spoiler");
+  spoilers.forEach(spoiler => {
+    spoiler.addEventListener("click", (e) => {
+      // This is very important for supporting nested spoilers.
+      e.stopPropagation();
+
+      const hidden = spoiler.classList.toggle("hidden");
+      spoiler.title = hidden ? "Show spoiler" : "Hide spoiler";
+    });
+  });
+</script>
+
+<style>
+  .spoiler {
+    cursor: pointer;
+    transition: all 0.5s;
+    border-radius: 5px;
+  }
+
+  .spoiler.hidden {
+    background-color: var(--sl-color-text);
+    color: var(--sl-color-text);
+  }
+
+  .spoiler.hidden::selection {
+    color: var(--sl-color-text);
+  }
+</style>
