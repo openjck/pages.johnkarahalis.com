@@ -50,13 +50,4 @@ export default defineConfig({
       remarkPlugins: [remarkCustomHeaderId],
     }),
   },
-
-  // Have Astro insert a <meta http-equiv> tags with a secure CSP.
-  //
-  // This has some tradeoffs, none of which appear to affect this site at the
-  // moment:
-  // https://docs.astro.build/en/reference/configuration-reference/#securitycsp
-  security: {
-    csp: true,
-  },
 });
