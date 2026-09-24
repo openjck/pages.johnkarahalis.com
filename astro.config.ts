@@ -34,6 +34,20 @@ function getSidebarEntries(): SidebarLink[] {
 export default defineConfig({
   integrations: [
     starlight({
+      // Do not use Starlight to power or theme _any_ 404 pages.
+      //
+      // If this line were omitted, Starlight would power and theme all 404
+      // pages, even for paths that are totally unrelated to pages that
+      // Starlight manages. For example, even "/missing/path/here" would be
+      // powered by a Starlight 404 page, with the site title of "Board Game
+      // FAQs..." and all the rest. That would be confusing, since this whole
+      // domain is not dedicated to board game FAQs.
+      //
+      // There is currently a 404 page in src/pages/404.mdx which is rendered
+      // instead for all 404 routes. If _that_ were not provided, the host's 404
+      // page (e.g., Netlify's 404 page) would display for all 404 routes.
+      disable404Route: true,
+
       components: {
         // Do not use a link for the site title, since there's nothing
         // meaningful to link to.
