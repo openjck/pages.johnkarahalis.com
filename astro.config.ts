@@ -35,7 +35,6 @@ export default defineConfig({
   integrations: [
     starlight({
       title: "Board Game FAQs by John Karahalis",
-      disable404Route: true,
       pagefind: false,
       components: {
         // Do not use a link for the site title, since there's nothing meaningful
