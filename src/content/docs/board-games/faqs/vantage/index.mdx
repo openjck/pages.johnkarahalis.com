@@ -3,19 +3,6 @@ title: Vantage Board Game FAQs
 ---
 import Spoiler from "/src/components/Spoiler.astro";
 
-TODO:
-
-* Review text, fragments, and headers (make them simpler) from...
-  * Already done
-    * Overview
-    * General guidance
-    * Actions
-    * Movement
-    * Player interaction
-    * Text clarifications
-  * Remaining to be done
-    * Cards from "Some cards in the player grid show" on down
-
 I run the wonderful board game
 [Vantage](https://boardgamegeek.com/boardgame/420033/vantage) for my game group.
 As we have played, and as I have played alone, some questions about the rules
@@ -152,21 +139,25 @@ As explained in the text, _do not_ consult storybooks for these actions. It
 bears repeating because it can be confusing. The result of the action is
 described on the card itself.
 
-### Some cards in the player grid show a number of boost cubes pointing to a skill icon. What does that mean? \{#card-boost-cubes-to-skill\}
+### What does it mean when boost cubes point to a skill icon on a card? \{#card-boost-to-skill\}
 
-It means that's one of the card's boost powers.  That number of boost cubes can
-be paid _from that card_ to gain the indicated skill token. If you look at your
-player card, you will notice that your player card also has a boost power like
-this, allowing two boost cubes to be spent to gain one _Move_ skill token or one
-coin. The iconography means the same thing when shown on another card. Just
-remember to spend the boost cubes _from that card_.
+That's one of the card's boost powers. That number of boost cubes can be paid
+_from that card_ to gain the indicated skill token. If you look at your player
+card, you'll notice that your player card also has a boost power like this,
+allowing two boost cubes to be spent to gain one _Move_ skill token or one coin.
+The iconography means the same thing when shown on another card. Just remember
+to spend the boost cubes _from the card those icons_.
 
-### Can an action on the side of a grid card (e.g., _CONSUME_) or the action on the bottom of a grid card (e.g., _BREW_) be completed multiple times? \{#card-action-multiple-times\}
+### Can a grid or supply card action be completed multiple times? \{#grid-card-actions-multiple-times\}
+
+For example, can an action that appears on the side of a grid card (e.g.,
+_CONSUME_) or an action that appears on the bottom of a grid card (e.g., _BREW_)
+be completed multiple times?
 
 Yes, as long as the card remains in play and unless stated otherwise. Just
-remember that each of those actions _counts_ as an action, so if you do that
-action, you cannot do another action (like a location action or a move action)
-on the same turn.
+remember that each of those actions _counts_ as an action, so if you perform
+that action on a turn, you cannot perform another action (like a location action
+or a move action) on the same turn.
 
 On BoardGameGeek, Jamey [stated
 that](https://boardgamegeek.com/thread/3543862/article/46345323#46345323)
@@ -186,15 +177,21 @@ time). As the [relevant rules](https://vantage.rulepop.com/#grid) state
 
 ### Can the boost powers of grid cards be used any time you want? Can they be used multiple times? \{#card-boost-powers-multiple-times\}
 
+### Can boost powers on cards be used at any time? Multiple times? \{#boost-power-timing\}
+
 Yes. Boost powers can be used as many times as you want, whenever you want. You
 can even use the same boost power multiple times in a row.
 
 This was discussed and clarified on [on
 BoardGameGeek](https://boardgamegeek.com/thread/3591477/obelisk-question).
 
-### When a card is removed from the grid, do the dice on it go to the challenge dice pool or the penalty dice box? \{#removed-card-dice-destination\}
+### When a card is removed from the grid, do the dice on it go to the challenge
+dice pool or the penalty dice box? \{#removed-card-dice-destination\}
 
-They go to the challenge dice pool. The [relevant rules](https://vantage.rulepop.com/#grid) state that:
+### When a card is removed from the grid, where do its dice go? \{#removed-card-dice-destination\}
+
+They go to the challenge dice pool. The [relevant
+rules](https://vantage.rulepop.com/#grid) state that:
 
 > Whenever you are instructed to replace or lose a card in your grid, refresh
 > any dice on it and return any boost on it to the general supply.
@@ -206,7 +203,10 @@ a couple of BoardGameGeek discussions about this:
 * [Where do my dice go if I swap a card out of my grid?](https://boardgamegeek.com/thread/3545604/where-do-my-dice-go-if-i-swap-a-card-out-of-my-gri)
 * [Placed challenge dice on removed cards](https://boardgamegeek.com/thread/3547830/placed-challenge-dice-on-removed-cards)
 
-### When you replace an item card with a different but related item card (e.g., an item was upgraded to something better), what happens to the boost cubes and challenge dice? \{#replaced-card-boost-cubes-dice\}
+### When replacing a grid card, what happens to boost cubes and dice? \{#replacement-grid-card-dice-and-boost-cubes\}
+
+For example, if you are told to replace a card from your grid with a better card
+from the box, what happens to boost cubes and challenge dice?
 
 It's a little strange thematically, in my opinion, but in this case, dice are
 put back into the challenge dice pool and boost cubes are put back into the
@@ -218,7 +218,7 @@ that:
 > Return lost cards to the box. You must always have your character card in your
 > grid. Insert the new card in the same position as the replaced card.
 
-### When you replace an item card with a different but related item card (e.g., an item was upgraded to something better), can you put the new card anywhere in your grid? \{#replacement-card-location\}
+### When replacing a grid card, can the new card go anywhere? \{#replacement-grid-card-location\}
 
 No. It must be placed in the same location as the old card. The [relevant
 rules](https://vantage.rulepop.com/#grid) state that (emphasis mine):
@@ -228,25 +228,37 @@ rules](https://vantage.rulepop.com/#grid) state that (emphasis mine):
 > Return lost cards to the box. You must always have your character card in your
 > grid. **Insert the new card in the same position as the replaced card**.
 
-### When you move a card (let's pretend it's called "umbrella") from your grid to the reserve, does that card (umbrella) keep its boost tokens? \{#reserved-card-boost-tokens\}
+### When you move a card (let's pretend it's called "umbrella") from your grid
+to the reserve, does that card (umbrella) keep its boost tokens?
+\{#reserved-card-boost-tokens\}
 
-Yes. This was [discussed on
+### When moving a card to the reserve, what happens to dice and boost cubes?
+
+The boost cubes remain on the card. This was [discussed on
 BoardGameGeek](https://boardgamegeek.com/thread/3544781/cubes-on-cards-swapped-to-reserve),
 and Jamey ruled that it makes the most thematic sense to keep the boost cubes on
-the card (umbrella) that is being moved to the reserve.
+the card that is being moved to the reserve.
+
+Challenge dice are refreshed, which means they must be returned to the challenge
+dice pool.
 
 Stonemaier Games now addresses this in [their
 FAQ](https://stonemaiergames.com/games/vantage/rules-faq/) (emphasis mine):
 
 > You may not use slots, abilities, or powers on reserved cards, but they
-> **retain boost tokens**. When reserved, a card’s challenge dice are refreshed.
+> **retain boost tokens**. When reserved, a card’s **challenge dice are
+> refreshed**.
 
-### When you gain a card, but there's no space for it in your grid _or_ reserve, what do you do? \{#gain-card-no-space\}
+### What should a player do if they have no space for a new card? \{#no-space-for-new-card\}
 
-You can put the card in your reserve, or you can put the card in your grid and
-then move a card from your grid to your reserve. Then, if you have too many
-cards in your reserve, take one or more cards from your reserve and put them
-back in the box until you _do not_ have too many cards in your reserve.
+If a player gains a new card and there is no space for that card in the grid
+_or_ the reserve, what should they do?
+
+The player can put the card in their reserve, or they can put the card in their
+grid and then move a card from their grid to their reserve. Then, if they have
+too many cards in their reserve, [as explained in the normal
+rules](https://vantage.rulepop.com/#grid), they should return cards from their
+reserve to the box until they _do not_ have too many cards in their reserve.
 
 The [relevant rules](https://vantage.rulepop.com/#grid) state that (emphasis
 mine):
