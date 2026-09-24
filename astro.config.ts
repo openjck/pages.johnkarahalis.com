@@ -37,8 +37,8 @@ export default defineConfig({
       title: "Board Game FAQs by John Karahalis",
       pagefind: false,
       components: {
-        // Do not use a link for the site title, since there's nothing meaningful
-        // to link to.
+        // Do not use a link for the site title, since there's nothing
+        // meaningful to link to.
         SiteTitle: "./src/components/TextOnlySiteTitle.astro",
       },
       sidebar: getSidebarEntries(),
