@@ -39,7 +39,7 @@ export default defineConfig({
         // meaningful to link to.
         SiteTitle: "./src/components/TextOnlySiteTitle.astro",
       },
-      favicon: "/public/favicon.ico",
+      favicon: "/images/favicon.ico",
       pagefind: false,
       sidebar: getSidebarEntries(),
       title: "Board Game FAQs by John Karahalis",

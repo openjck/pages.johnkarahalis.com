@@ -1,2 +1,2 @@
 ico:
-  magick convert -background transparent favicon-cropped.png -define icon:auto-resize=16,24,32,48,64,72,96,128,256 ../../../public/favicon.ico
+  magick -background transparent favicon-cropped.png -define icon:auto-resize=16,24,32,48,64,72,96,128,256 ../../../public/images/favicon.ico
