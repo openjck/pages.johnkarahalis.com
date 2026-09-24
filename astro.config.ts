@@ -32,11 +32,6 @@ function getSidebarEntries(): SidebarLink[] {
 }
 
 export default defineConfig({
-  markdown: {
-    processor: unified({
-      remarkPlugins: [remarkCustomHeaderId],
-    }),
-  },
   integrations: [
     starlight({
       title: "Board Game FAQs by John Karahalis",
@@ -50,4 +45,18 @@ export default defineConfig({
       sidebar: getSidebarEntries(),
     }),
   ],
+  markdown: {
+    processor: unified({
+      remarkPlugins: [remarkCustomHeaderId],
+    }),
+  },
+
+  // Have Astro insert a <meta http-equiv> tags with a secure CSP.
+  //
+  // This has some tradeoffs, none of which appear to affect this site at the
+  // moment:
+  // https://docs.astro.build/en/reference/configuration-reference/#securitycsp
+  security: {
+    csp: true,
+  },
 });
